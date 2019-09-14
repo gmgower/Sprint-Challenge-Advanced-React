@@ -5,7 +5,7 @@ const PlayerCard = (props) => {
     console.log('PlayerCard', props)
     const {player} = props
 return (
-        <div>
+        <div className="player-card">
             <h1>{player.name}</h1>
             <p>{player.country}</p>
             <p>{player.searches}</p>
