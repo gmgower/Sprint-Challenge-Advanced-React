@@ -3,6 +3,8 @@ import './App.css';
 
 import axios from 'axios';
 
+import PlayerList from './components/PlayerList.jsx';
+
 function App() {
   const [players, setPlayers] = useState([])
 
@@ -26,6 +28,7 @@ function App() {
       <header className="App-header">
         <h1>Women's World Cup</h1>
 
+      <PlayerList players={players} />
       </header>
     </div>
   );
