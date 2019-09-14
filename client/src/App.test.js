@@ -7,13 +7,19 @@ import App from './App';
 
 // import {scoreStrike} from './App'
 
-test('App renders without crashing', () => {
+it('App renders without crashing', () => {
  
   render(<App />)
 });
 
 
+// test(' Darkmode?', () => {
+//   const { getByTextId } = render(<App />);
+//   getByTextId(/darkmode/i);
+// });
+
 test(' App header contains text', () => {
-  const { getByText } = render(<App />);
-  getByText(/World Cup/i);
+  const navbar = render(<App />)
+  // const { getByText } = render(<App />);
+  navbar.getByText(/World Cup/i);
 });
