@@ -2,10 +2,7 @@ import React from 'react';
 
 import {render} from '@testing-library/react';
 
-
 import App from './App';
-
-// import {scoreStrike} from './App'
 
 it('App renders without crashing', () => {
  
